@@ -25,20 +25,6 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 class TestNegocioApplicationTests {
 
-    @MockBean
-    ClienteRepository clienteRepository;
-
-    @MockBean
-    SucursalRepository sucursalRepository;
-
-    @Autowired
-    ClienteService service;
-
-    Cliente cliente;
-    Cliente cliente2;
-    Cliente clienteGuardado;
-    Cliente clienteGuardado2;
-
     @Test
     void contextLoads() {
     }

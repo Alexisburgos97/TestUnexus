@@ -2,6 +2,7 @@ package com.testnegocio.services.impl;
 
 import com.testnegocio.entity.Cliente;
 import com.testnegocio.repository.ClienteRepository;
+import com.testnegocio.repository.SucursalRepository;
 import com.testnegocio.services.ClienteService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,9 +14,11 @@ import java.util.Optional;
 public class ClienteServiceImpl implements ClienteService {
 
     private ClienteRepository repository;
+    private SucursalRepository sucursalRepository;
 
-    public ClienteServiceImpl(ClienteRepository repository) {
+    public ClienteServiceImpl(ClienteRepository repository, SucursalRepository sucursalRepository) {
         this.repository = repository;
+        this.sucursalRepository = sucursalRepository;
     }
 
     @Override

@@ -7,6 +7,8 @@ import com.testnegocio.entity.Cliente;
 import com.testnegocio.entity.Sucursal;
 import com.testnegocio.repository.ClienteRepository;
 import com.testnegocio.repository.SucursalRepository;
+import com.testnegocio.services.impl.ClienteServiceImpl;
+import com.testnegocio.services.impl.SucursalServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
