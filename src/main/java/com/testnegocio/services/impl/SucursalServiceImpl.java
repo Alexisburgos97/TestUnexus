@@ -1,7 +1,8 @@
-package com.testnegocio.services;
+package com.testnegocio.services.impl;
 
 import com.testnegocio.entity.Sucursal;
 import com.testnegocio.repository.SucursalRepository;
+import com.testnegocio.services.SucursalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -27,7 +27,6 @@ public class NegocioController {
     ObjectMapper objectMapper = new ObjectMapper();
 
     //Clientes
-
     @GetMapping("/clientes")
     public ResponseEntity<?> listarClientes(){
 
@@ -330,7 +329,6 @@ public class NegocioController {
 
 
     //Sucursales
-
     @GetMapping("/sucursales")
     public ResponseEntity<?> listarSucursales(){
         Iterable<Sucursal> listado = null;
